@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+@mixin addSameMargin($margin) {
+    margin-left: $margin  !important;
+    margin-right: $margin  !important;
+}
+
+@mixin addSamePadding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+
+
+
+.main-div {
+    width: 90vw;
+    background-color: #0abecb;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+
+    h3 {
+        // add a low dark color
+        color: #404e4e;
+        font-size: 1.5rem;
+
+        padding-bottom: 1rem;
+
+    }
+
+    .div-2 {
+        background-color: #404e4e;
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
